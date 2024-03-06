@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cyber-space/static/css/main.c0392d30.css",
+    "main.js": "/cyber-space/static/js/main.f861b385.js",
+    "static/js/787.9e9f4ffd.chunk.js": "/cyber-space/static/js/787.9e9f4ffd.chunk.js",
+    "static/media/astronaut.png": "/cyber-space/static/media/astronaut.002ca99176f4ee924a2c.png",
+    "static/media/nasa-astro.jpg": "/cyber-space/static/media/nasa-astro.a2645480e9a468f506fa.jpg",
+    "static/media/earth.jpg": "/cyber-space/static/media/earth.01a0059f1f4d8e2211d2.jpg",
+    "static/media/shuttle.jpg": "/cyber-space/static/media/shuttle.a2c822401a7c57d4216b.jpg",
+    "static/media/process-bg.jpg": "/cyber-space/static/media/process-bg.367890451c7eaa8338c8.jpg",
+    "static/media/landing_img_1.jpg": "/cyber-space/static/media/landing_img_1.5dae5aa36c539d29ad7d.jpg",
+    "static/media/space-crop.jpg": "/cyber-space/static/media/space-crop.9bf70d6e924e176a12cb.jpg",
+    "index.html": "/cyber-space/index.html",
+    "main.c0392d30.css.map": "/cyber-space/static/css/main.c0392d30.css.map",
+    "main.f861b385.js.map": "/cyber-space/static/js/main.f861b385.js.map",
+    "787.9e9f4ffd.chunk.js.map": "/cyber-space/static/js/787.9e9f4ffd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0392d30.css",
+    "static/js/main.f861b385.js"
+  ]
+}
