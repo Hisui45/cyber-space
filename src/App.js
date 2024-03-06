@@ -112,7 +112,7 @@ function App() {
           </section>
         </div>
       </div>
-      <div className="call-to-action border-1 py-8 px-8 border-y-medium-emphasis">
+      <div className="call-to-action border-y py-8 px-8 border-y-medium-emphasis">
         <section>
           <h3>Want to take your digital presence to the next level?</h3>
           <p>
@@ -176,7 +176,7 @@ function App() {
           </section>
         </div>
       </div>
-      <div className="social-proof py-8 px-8">
+      <div className="social-proof border-y border-y-medium-emphasis py-8 px-8">
         <div className="flex gap-1 justify-center mb-3">
           <Icon name="star-48-purple" size="24px" className="" />
           <Icon name="star-48-purple" size="24px" className="" />
@@ -316,7 +316,7 @@ function App() {
             </ul>
           </div>
           <nav className="flex flex-col">
-            <h5>Quick Links</h5>
+            <p className="m-0">Quick Links</p>
             <a>Services</a>
             <a>About</a>
             <a>Contact</a>
