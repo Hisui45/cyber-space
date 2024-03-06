@@ -176,7 +176,7 @@ function App() {
           </section>
         </div>
       </div>
-      <div className="social-proof border-1 border-y-medium-emphasis py-8 px-8">
+      <div className="social-proof py-8 px-8">
         <div className="flex gap-1 justify-center mb-3">
           <Icon name="star-48-purple" size="24px" className="" />
           <Icon name="star-48-purple" size="24px" className="" />
