@@ -7,7 +7,8 @@
 :root {
   --high-emphasis: rgba(255, 255, 255, 0.87);
   --dark-btn: black;
-  --medium-rmphasis:rgba(255, 255, 255, 0.6);
+  --medium-emphasis:rgba(255, 255, 255, 0.6);
+  --main-bg: #121212;
 }
 
 * {
@@ -18,26 +19,50 @@
 }
 
 .home-page{
-  background-color: #121212;
-background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-color: var(--main-bg);
+  position: relative;
+  overflow-x: hidden;
 }
+
+.process section div{
+  background-color: #1A1A1A;
+  position: relative;
+}
+
+.home-page::before, .process section div::before{
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/noise.png");
+  background-repeat: repeat;
+  background-size: 182px;
+  filter: opacity(.02);
+  /* z-index: -1; */
+}
+
+.content{
+  position: relative;
+}
+
 html {
   font-size: 1rem;
-  
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .home-page h1 {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  /* font-weight: 900; */
   font-style: normal;
+  color: #BCAA99;
 }
 
 .home-page h2 {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  /* font-weight: 200; */
   font-style: normal;
 }
 
@@ -51,10 +76,9 @@ html {
 .home-page p, .home-page li{
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  /* font-weight: 200; */
   font-style: normal;
-  color: var(--medium-rmphasis);
-
+  margin-bottom:0;
 }
 
 .home-page .tagline {
@@ -81,20 +105,19 @@ html {
   font-style: normal !important;
 }
 
+.home-page span{
+  font: inherit;
+}
+
+
 .hero {
-  position: relative;
   width: 100%;
   height: 100vh;
-  /* padding: 1em 2em; */
-  /* min-height: 100vh; */
-  background-image: url("./assets/landing_img_1.jpg");
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat; 
 }
 
 .hero-nav {
   overflow: hidden;
+  height: 52px;
 }
 
 
@@ -156,63 +179,113 @@ button.call-to-action {
   }
 }
 
+
+
 .hero section{
   color: var(--high-emphasis);
+  background-image: url("./assets/earth.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: calc(100vh - 92px);
 }
+
+.hero section .right p{
+  margin: 0;
+}
+
+@media screen and (max-width: 620px) {
+  .hero .right{
+    display:none;
+  }
+   
+}
+
+
+
+
+.briefing p, .hero section .left p{
+    color: var(--medium-rmphasis);
+}
+
+.briefing h2 span{
+  font-size: 1.25em;
+}
+
+.briefing img{
+  height: 50%;
+}
+
 
 .services img{
   object-fit: cover;
-  height: 200px;
 }
 
-.services section img,
-.benefits section img{
-  margin-bottom: 0.5rem;
+.services p, .briefing p, .benefits p{
+  font-weight: 200;
 }
 
-div.call-to-action, div.social-proof{
-  background-color: #121212;
+.services section:nth-child(1){
+  background-image: url("./assets/moon-ground.jpg");
+  background-position: center;
+  background-size: cover;
 }
+
+.services section:nth-child(2){
+  background-image: url("./assets/moon.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.services section:nth-child(3){
+  background-image: url("./assets/rover.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 
 div.call-to-action button{
-  background-color: rgba(75, 81, 121, 1);
+  background-color: var(--dark-btn);
 }
+
+
+.word{
+  margin-top: 30px;
+}
+
+
+.benefits{
+  position: relative;
+  overflow-x: hidden;
+}
+
+.benefits::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/grid-me.png");
+  background-size: 25px;
+  background-repeat: repeat;   
+  filter: opacity(0.1);
+  /* z-index: -1; */
+}
+
 
 div.social-proof ul li:first-child{
   color: var(--high-emphasis);
 }
 
-.process{
-  position: relative;
-  width: 100%;
-  /* height: 100vh; */
-  min-height: 1px;
-  /* min-height: 100vh; */
-  /* padding: 1em 2em; */
-  /* min-height: 100vh; */
-  background-image: url("./assets/process-bg.jpg");
-  background-size: cover; 
-  background-position: center;
-  background-repeat: repeat;
-}
-
-.content-wrap {
-  position: relative;
-  /* overflow: hidden; */
-  color: transparent;
+.process section{
+  font-weight:200;
 }
 
 
-.content-wrap::before {
-  height: 55px;
-  width: 2px;
-  right: 0;
-  left: calc(3% - 1px);
-  top: 20%;
-  position: absolute;
-  content: "";
-  background-color: white;
-}
+
+
+
 
 .shuttle{
   position: relative;
