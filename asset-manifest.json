@@ -1,23 +1,19 @@
 {
   "files": {
-    "main.css": "/cyber-space/static/css/main.a3b934af.css",
-    "main.js": "/cyber-space/static/js/main.0d720e22.js",
+    "main.css": "/cyber-space/static/css/main.1883888d.css",
+    "main.js": "/cyber-space/static/js/main.697ca256.js",
     "static/js/787.9e9f4ffd.chunk.js": "/cyber-space/static/js/787.9e9f4ffd.chunk.js",
-    "static/media/moon-ground.jpg": "/cyber-space/static/media/moon-ground.8aa04005b3f10952697c.jpg",
-    "static/media/rover.jpg": "/cyber-space/static/media/rover.43d8a6a7617eaff5ae62.jpg",
     "static/media/nasa-astro.jpg": "/cyber-space/static/media/nasa-astro.a2645480e9a468f506fa.jpg",
     "static/media/earth.jpg": "/cyber-space/static/media/earth.01a0059f1f4d8e2211d2.jpg",
     "static/media/small-step.jpg": "/cyber-space/static/media/small-step.26e3feb0ab9ad6bee286.jpg",
-    "static/media/moon.jpg": "/cyber-space/static/media/moon.0c9a3da9c7730258f861.jpg",
-    "static/media/space-crop.jpg": "/cyber-space/static/media/space-crop.9bf70d6e924e176a12cb.jpg",
-    "static/media/noise.png": "/cyber-space/static/media/noise.db8b66b8af2fad2a51d9.png",
+    "static/media/noise-03.png": "/cyber-space/static/media/noise-03.605dd7ad122dfb2fee86.png",
     "index.html": "/cyber-space/index.html",
-    "main.a3b934af.css.map": "/cyber-space/static/css/main.a3b934af.css.map",
-    "main.0d720e22.js.map": "/cyber-space/static/js/main.0d720e22.js.map",
+    "main.1883888d.css.map": "/cyber-space/static/css/main.1883888d.css.map",
+    "main.697ca256.js.map": "/cyber-space/static/js/main.697ca256.js.map",
     "787.9e9f4ffd.chunk.js.map": "/cyber-space/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3b934af.css",
-    "static/js/main.0d720e22.js"
+    "static/css/main.1883888d.css",
+    "static/js/main.697ca256.js"
   ]
 }
