@@ -15,217 +15,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--high-emphasis);
 }
 
-.home-page{
+.application{
   background-color: var(--main-bg);
-  position: relative;
-  overflow-x: hidden;
-}
-
-.process section div, .services div:nth-child(2) div{
-  background-color: #1A1A1A;
-  position: relative;
-}
-
-.home-page::before, .process section div::before, .services div:nth-child(2) div::before{
-  content: ""; 
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("./assets/noise.png");
+  background-image: url("./assets/noise-03.png");
   background-repeat: repeat;
   background-size: 182px;
-  filter: opacity(.03);
-  /* z-index: -1; */
-}
-
-.content{
-  position: relative;
-}
-
-html {
-  font-size: 1rem;
-}
-
-.home-page h1 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: 900; */
-  font-style: normal;
-  /* color: #BCAA99; */
-}
-
-.home-page h2 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: 200; */
-  font-style: normal;
-}
-
-.home-page h3 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.home-page p, .home-page li{
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: 200; */
-  font-style: normal;
-  margin-bottom:0;
-}
-
-.home-page .tagline {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  color: var(--high-emphasis);
-}
-
-.home-page a {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  text-decoration: none;
-  color: white;
-}
-
-.home-page button {
-  font-family: "Nunito", sans-serif !important;
-  font-optical-sizing: auto;
-  font-weight: 600 !important;
-  font-style: normal !important;
-}
-
-.home-page span{
-  font: inherit;
+  min-height: 100dvh;
 }
 
 
 .hero {
-  width: 100%;
-  min-height: 100vh;
+  --_br: 1rem;
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: minmax(18rem, auto) min-content min-content min-content;
+  min-height: calc(100dvh - 72px);
+  position: relative;
 }
 
-.hero-nav {
+
+.hero-image {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+  border-radius: var(--_br);
   overflow: hidden;
-  height: 52px;
-}
-
-
-button.call-to-action {
-  background-color: var(--dark-btn);
-  color: var(--high-emphasis);
-  padding: 0.9em 1em;
-  border-radius: 4px;
-}
-
-.hero-nav a {
-  float: right;
-  display: block;
-  text-align: center;
-  padding: 0.9em 1em;
-  text-decoration: none;
-  color: var(--high-emphasis);
-}
-
-.hero-nav a:first-child {
-  float: left;
-  padding: 0.9em 0;
-}
-
-
-.hero-nav .icon {
-  display: none;
-}
-
-.hero-nav .call-to-action{
-  float: right;
-}
-
-@media screen and (max-width: 400px) {
-  .hero-nav .buttons .call-to-action {display: none;}
-}
-
-@media screen and (max-width: 640px) {
-  .hero-nav a:not(:first-child) {display: none;}
-  .hero-nav button.icon {
-    float: right;
-    display: block;
-    margin-left: 16px;
-  }
-}
-
-
-@media screen and (max-width: 640px) {
-  .hero-nav.responsive {
-    position: relative;
-  }
-  .hero-nav.responsive .buttons {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .hero-nav.responsive a {
-    float: none;
-    display: block;
-  }
-  .hero-nav.responsive a:first-child {
-    text-align: left;
-  }
-}
-
-
-
-.hero section{
   color: var(--high-emphasis);
   background-image: url("./assets/rover.jpg");
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat; 
-  /* height: calc(100vh - 92px); */
 }
 
-.hero section .right p{
-  margin: 0;
-}
-
-@media screen and (max-width: 640px) {
-  .hero h2, .sidekick{
-    display:none;
-  }
-   
-}
-
-.house-info {
-  --_br: 1rem;
-  display: grid;
-  /* gap: 1rem; */
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr auto auto auto;
-  /* grid-template-rows: minmax(40%, 58%) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto); */
-  min-height: calc(100vh - 92px);
-  position: relative;
-}
-
-
-.house-image {
-  grid-row: 1 / 3;
-  grid-column: 1 / 3;
-  border-radius: var(--_br);
-  overflow: hidden;
-}
-
-.house-image::before,
-.house-image::after,
+.hero-image::before,
+.hero-image::after,
 .house-price::after {
   --_size: var(--_br);
   content: "";
@@ -240,14 +64,14 @@ button.call-to-action {
   rotate: -90deg;
 }
 
-.house-image::before {
+.hero-image::before {
   left: 0;
   bottom: 0;
   grid-column: 2;
   grid-row: 2 / 3;
 }
 
-.house-image::after {
+.hero-image::after {
   left: 0;
   bottom: 0;
   grid-column: 1;
@@ -255,24 +79,22 @@ button.call-to-action {
   box-shadow: -1rem 0 0 var(--main-bg);
 }
 
-.house-image img {
-  width: 100%;
-  /* height: 100%; */
-  object-fit: cover;
-}
-
 .house-price {
   display: grid;
-  /* padding: 1rem 1rem 0 1rem; */
-  background: var(--main-bg);
-  /* font-weight: 500; */
+  background-color: var(--main-bg);
+  background-image: url("./assets/noise-03.png");
+  background-repeat: repeat;
+  background-size: 182px;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   border-radius: var(--_br) var(--_br) 0 0;
-  /* padding: 1rem; */
-  /* box-shadow: 0 1rem 0 var(--main-bg), 0 0 0 1rem var(--main-bg); */
-  position: relative;
+  /* position: relative; */
 }
+
+.house-price h1{
+  align-self: center;
+}
+
 
 .house-price::after {
   --_size: calc(var(--_br) * 1.5);
@@ -283,237 +105,52 @@ button.call-to-action {
   bottom: -1rem;
 }
 
-.house-price::before{
-  content: ""; 
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("./assets/noise.png");
-  background-repeat: repeat;
-  background-size: 182px;
-  filter: opacity(.03);
-  /* z-index: -1; */
-}
-
-.house-price span {
-  display: grid;
-  place-items: center;
-  background: var(--main-bg);
-  /* padding: 0.75rem 0; */
-  border-radius: calc(var(--_br) / 2);
-}
-
-.house-price span::before{
-  content: ""; 
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("./assets/noise.png");
-  background-repeat: repeat;
-  background-size: 182px;
-  filter: opacity(.03);
-  /* z-index: -1; */
-}
 
 .house-meta {
   margin: 0;
-  background: var(--main-bg);
+  background-color: var(--main-bg);
+  background-image: url("./assets/noise-03.png");
+  background-repeat: repeat;
+  background-size: 182px;
   color: var(--high-emphasis);
   grid-row: 3 / 4;
   grid-column: 1 / 3;
   line-height: 1.8;
   border-radius: 0 var(--_br) var(--_br) var(--_br);
-  position: relative;
+  /* position: relative; */
 }
 
-.house-meta::before{
-  content: ""; 
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("./assets/noise.png");
-  background-repeat: repeat;
-  background-size: 182px;
-  filter: opacity(.03);
-  /* z-index: -1; */
+.hero-desc{
+  grid-row: 4 / 5;
+  grid-column: 1 / 3;
 }
 
-@media screen and (min-width: 850px) and (max-width:1023px) {
-  .house-info {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .house-image {
+@media screen and (min-width: 960px) {
+  .hero-desc{
+    grid-row: 3 / 4;
     grid-column: 1 / 4;
-  }
-
-  .house-meta {
-    grid-column: 1 / 4;
-  }
-   
-}
-
-@media screen and (min-width: 1024px) and (max-width:1280px) {
-  .house-desc{
-    padding-left: 9rem;
-  }
-}
-
-@media screen and (min-width: 1280px) and (max-width:1303px) {
-  .house-desc{
-    max-width: 22rem;
+    align-self: end;
     justify-self: end;
-    align-self: center;
-    padding-left: 10rem;
-  }
-   
-}
-
-@media screen and (min-width: 1024px) and (max-width:1280px) {
-  .house-desc{
-    padding-left: 9rem;
+    max-width: 35%;
   }
 }
 
-@media screen and (min-width: 1304px){
-  .house-desc{
-    padding-left: 12rem;
-  }
-   
-}
 
-.briefing p, .hero section .left p{
-    color: var(--medium-emphasis);
-}
-
-
-@media screen and (max-width: 768px) {
-  .services h2{
-      text-align: center;
+ @media screen and (min-width: 1140px) and (max-width:1247px) {
+  .hero-desc{
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+    max-width: none;
+    align-self: normal;
+    justify-self: normal;
   }
 }
 
-.briefing img{
-  height: 50%;
-}
-
-
-.services img{
-  object-fit: cover;
-}
-
-.services p, .briefing p, .benefits p{
-  font-weight: 200;
-}
-
-.services div:nth-child(2) div:nth-child(1) section{
-  background-image: url("./assets/moon-ground.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.services div:nth-child(2) div:nth-child(2) section{
-  background-image: url("./assets/moon.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.services div:nth-child(2) div:nth-child(3) section{
-  background-image: url("./assets/rover.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-
-div.call-to-action button{
-  background-color: var(--dark-btn);
-}
-
-
-.word{
-  margin-top: 30px;
-}
-
-
-.call-to-action{
-  position: relative;
-  overflow-x: hidden;
-}
-
-.call-to-action::before {
-  content: ""; 
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("./assets/grid-me.png");
-  background-size: 25px;
-  background-repeat: repeat;   
-  filter: opacity(0.1);
-  /* z-index: -1; */
-}
-
-
-
-
-div.social-proof ul li:first-child{
-  color: var(--high-emphasis);
-}
-
-.process section{
-  font-weight:200;
-}
 
 
 
 
 
-
-.shuttle{
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  background-image: url("./assets/space-crop.jpg");
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  display: grid;
-}
-
-.shuttle img{
-  object-fit: cover;
-  place-self: center;
-  height: 600px;
-}
-
-.home-page .form p{
-  color: var(--high-emphasis);
-  margin-bottom: 8px;
-  margin-top: 8px;
-}
-
-.home-page .form div{
-  border: 2px solid var(--high-emphasis);
-  border-radius: 4px;
-}
-
-.home-page .form div input{
-  width: 100%;
-  height: 2.5rem;
-  background: none;
-}
-
-.home-page .form div:nth-child(8),
-.home-page .form div:nth-child(8) input{
-  height: 6rem;
-}
 
 
 

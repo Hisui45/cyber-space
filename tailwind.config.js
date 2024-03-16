@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily:{
-      'raleway':['Raleway, sans-serif']
+      'raleway':['Raleway, sans-serif'],
+      'nunito':['Nunito, sans-serif']
     },
     extend: {
       colors:{
@@ -19,9 +21,12 @@ module.exports = {
       },
       flexBasis: {
         '12/25': '48%',
+      },
+      backgroundImage: {
+        'hero-image': "url('./src/assets/rover.jpg')",
       }
     },
   },
   plugins: [],
-}
+})
 
