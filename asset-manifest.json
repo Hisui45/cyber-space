@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/cyber-space/static/css/main.1883888d.css",
-    "main.js": "/cyber-space/static/js/main.697ca256.js",
+    "main.css": "/cyber-space/static/css/main.86d3aff6.css",
+    "main.js": "/cyber-space/static/js/main.c3cc83b1.js",
     "static/js/787.9e9f4ffd.chunk.js": "/cyber-space/static/js/787.9e9f4ffd.chunk.js",
+    "static/media/rover.jpg": "/cyber-space/static/media/rover.43d8a6a7617eaff5ae62.jpg",
     "static/media/nasa-astro.jpg": "/cyber-space/static/media/nasa-astro.a2645480e9a468f506fa.jpg",
     "static/media/earth.jpg": "/cyber-space/static/media/earth.01a0059f1f4d8e2211d2.jpg",
     "static/media/small-step.jpg": "/cyber-space/static/media/small-step.26e3feb0ab9ad6bee286.jpg",
     "static/media/noise-03.png": "/cyber-space/static/media/noise-03.605dd7ad122dfb2fee86.png",
     "index.html": "/cyber-space/index.html",
-    "main.1883888d.css.map": "/cyber-space/static/css/main.1883888d.css.map",
-    "main.697ca256.js.map": "/cyber-space/static/js/main.697ca256.js.map",
+    "main.86d3aff6.css.map": "/cyber-space/static/css/main.86d3aff6.css.map",
+    "main.c3cc83b1.js.map": "/cyber-space/static/js/main.c3cc83b1.js.map",
     "787.9e9f4ffd.chunk.js.map": "/cyber-space/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1883888d.css",
-    "static/js/main.697ca256.js"
+    "static/css/main.86d3aff6.css",
+    "static/js/main.c3cc83b1.js"
   ]
 }
