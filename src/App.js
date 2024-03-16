@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="home-page">
       <div className="content">
-        <div class="hero px-3 py-7">
+        <div class="hero px-3 pt-8">
           <nav class="hero-nav mb-3" id="top-nav">
             <a className="logo active">cyber·space</a>
             <div className="buttons">
@@ -38,37 +38,70 @@ function App() {
             <section className="house-image flex flex-col justify-end"></section>
             <div class="house-price">
               <div className="content flex">
-                <h1 className="text-6xl sm:text-7xl text-high-emphasis font-bold sm:max-w-xl md:text-7xl md:max-w-5xl lg:text-7xl lg:max-w-none xl:text-8xl mb-0 mt-2 lg:ml-4 mr-4">
-                  Expand 
+                <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl text-high-emphasis font-semibold sm:max-w-xl md:max-w-5xl lg:max-w-none mb-0  mr-4 mt-2 lg:ml-4">
+                  It's one
                 </h1>
-                <h1 className="text-high-emphasis font-bold
-                hidden md:block text-6xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl sm:max-w-xl  md:max-w-5xl lg:max-w-none mb-0 mt-2 ml-4 pr-4">
-                  the
+                <h1
+                  className="text-high-emphasis font-semibold
+                hidden lg:block text-6xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl sm:max-w-xl  md:max-w-5xl lg:max-w-none mb-0 mt-2 pr-2"
+                >
+                  small
                 </h1>
               </div>
             </div>
-            <ul class="house-meta p-0">
+            <ul class="house-meta p-0 pb-3">
               <div className="content">
-                <h1 className="hidden text-6xl sm:text-7xl text-high-emphasis font-bold sm:max-w-xl md:text-7xl md:max-w-6xl lg:text-7xl lg:max-w-none mb-0 leading-[5rem] md:leading-[5.5rem] lg:leading-[7rem] xl:text-8xl xl:leading-[8rem] md:block lg:ml-4">
-                  horizon with <span className="text-accent-blue"> your vision </span> and{" "}
-                  <span className="text-accent-blue">our expertise</span>.
+                <h1 className="hidden lg:block text-6xl sm:text-7xl text-high-emphasis font-semibold md:text-7xl lg:text-7xl mb-0 leading-[5rem] md:leading-[5rem] lg:leading-[6rem] xl:text-8xl xl:leading-[8rem] lg:ml-4">
+                  step for <span className="text-accent-blue">you</span>, one
+                  giant leap for
+                  <span className="text-accent-blue"> your business</span>.
                 </h1>
-                <h1 className="md:hidden text-6xl sm:text-7xl text-high-emphasis font-bold sm:max-w-xl md:text-7xl md:max-w-6xl lg:text-7xl lg:max-w-none mb-0 md:leading-[5.5rem] lg:leading-[7rem] xl:text-8xl xl:leading-[8rem]lg:ml-4">
-                  the horizon with <span className="text-accent-blue"> your vision </span> and{" "}
-                  <span className="text-accent-blue">our expertise</span>.
+                <h1 className="lg:hidden text-6xl sm:text-7xl text-high-emphasis font-semibold md:text-7xl lg:text-7xl mb-0 leading-[4rem] md:leading-[5rem] lg:leading-[6rem] xl:text-8xl xl:leading-[8rem] lg:ml-4">
+                  small step for <span className="text-accent-blue">you</span>, one
+                  giant leap for
+                  <span className="text-accent-blue"> your business</span>.
                 </h1>
               </div>
             </ul>
-            <p className="house-desc z-10 py-2 text-xl
-            row-start-4 row-end-5 col-start-1 col-end-3 md:py-8
-            md:row-start-3 md:row-end-4 md:col-start-2 md:col-end-3 md:self-end md:justify-self-end md:text-2xl font-light md:text-right text-medium-emphasis md:max-w-96">
-                Developing websites, mobile applications, and software crafted to bring
-                visions to life and unlock new horizons.
-              </p>
+            <p
+              className="house-desc z-10 pb-4 text-xl
+            row-start-4 row-end-5 col-start-1 col-end-3
+            lg:row-start-3 lg:row-end-4 lg:col-start-2 lg:col-end-3 lg:self-end lg:text-xl font-light text-medium-emphasis lg:max-h-28 xl:max-h-none xl:text-2xl"
+            >
+              Developing websites, mobile apps, and software crafted to
+              bring visions to life and unlock new horizons.
+            </p>
           </div>
         </div>
+        <div className="briefing flex justify-between px-3 py-8">
+          <div className="flex flex-col max-w-2xl px-3">
+            <h2 className="text-3xl font-normal">
+              With <span className="text-accent-red">cyber·space</span>, it's
+              <br></br>
+              <span>
+                one small step for you, one giant leap for your business
+              </span>
+            </h2>
+            <p className="text-base md:text-lg">
+              First came the industrial age, then the space age, and now it's
+              the cyber-space age where leveraging technology is essential for
+              success. Just as the first step on the moon marked a monumental
+              leap for mankind, our services promise to bring your visions and
+              aspirations into reality. From innovative software solutions to
+              captivating digital experiences, we're here to turn your dreams
+              into tangible achievements. Take that first step into the
+              cyber-space age with us, and let's redefine what's possible for
+              your business in this exciting new era.
+            </p>
+          </div>
+          <img
+            src={briefImg}
+            className="rounded aspect-[16/9] object-cover max-h-96"
+          />
+        </div>
+
         <div
-          className="flex gap-8 text-nowrap font-normal text-2xl font-raleway"
+          className="flex gap-8 text-nowrap font-normal text-2xl font-raleway -rotate-3 my-4"
           aria-hidden="true"
         >
           <p>sign.</p>
@@ -93,37 +126,7 @@ function App() {
           <p>Develop.</p>
           <p>Deploy.</p>
         </div>
-        <div className="briefing px-3 py-6 md:mx-5 lg:max-w-5xl lg:mx-auto lg:py-32 xl:max-w-6xl xl:mx-auto">
-          <div className="flex justify-end">
-            <h2 className="text-3xl text-right font-normal max-w-2xl">
-              With <span className="text-accent-red">cyber·space</span>, it's
-              <br></br>
-              <span>
-                one small step for you, one giant leap for your business
-              </span>
-            </h2>
-          </div>
-
-          <div className="flex flex-col items-center lg:flex-row-reverse lg:justify-between">
-            <p className="basis-1/2 text-right pl-16 py-4 text-base md:text-lg">
-              First came the industrial age, then the space age, and now it's
-              the cyber-space age where leveraging technology is essential for
-              success. Just as the first step on the moon marked a monumental
-              leap for mankind, our services promise to bring your visions and
-              aspirations into reality. From innovative software solutions to
-              captivating digital experiences, we're here to turn your dreams
-              into tangible achievements. Take that first step into the
-              cyber-space age with us, and let's redefine what's possible for
-              your business in this exciting new era.
-            </p>
-            <img
-              src={briefImg}
-              className="rounded aspect-[16/9] object-cover max-h-72"
-            />
-          </div>
-        </div>
-        
-        <div className="services p-4 mt-32 lg:mb-16 md:mx-5 ">
+        <div className="services">
           <div className="mb-12 max-w-6xl lg:mx-auto">
             <h2 className="text-3xl font-normal mb-4">
               Whether you're a <span className="text-accent-red">startup</span>,
@@ -192,7 +195,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="call-to-action py-8 md:py-16 lg:py-24 px-4 ">
+        <div className="call-to-action py-8 md:py-16 lg:py-24 px-3 ">
           <div className="content max-w-5xl md:mx-auto md:flex md:flex-row-reverse md:justify-between">
             <div className="py-2 flex flex-col items-center justify-center text-xl min-w-72 px-16 sm:mx-auto sm:max-w-96 sm:px-0 md:basis-1/2 md:max-w-96 ms:mx-0">
               {/*   */}
@@ -236,7 +239,7 @@ function App() {
             </section>
           </div>
         </div>
-        <div className="benefits py-16 px-3">
+        <div className="benefits px-3">
           <div className="content">
             <h2 className="text-center text-3xl">
               Light-years ahead of the
@@ -306,7 +309,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="technologies px-4 py-8">
+        <div className="technologies px-3">
           <h2 className="font-light text-center mb-8 md:text-3xl">
             Technologies used to bring your{" "}
             <span className="text-accent-blue">vision</span> to fruition
@@ -327,7 +330,7 @@ function App() {
             <Icon name="flutter-96" size="48px" className="" />
           </div>
         </div>
-        <div className="process pt-16 pb-8 px-8 lg:max-w-5xl lg:mx-auto">
+        <div className="process lg:max-w-5xl lg:mx-auto">
           <p className="text-xs uppercase tracking-wider text-accent-blue mb-1 font-medium md:text-sm lg:text-base">
             The Process
           </p>
@@ -405,7 +408,7 @@ function App() {
           />
         </div>
         <div
-          className="flex gap-8 text-nowrap font-normal text-2xl font-raleway mt-4"
+          className="flex gap-8 text-nowrap font-normal text-2xl font-raleway"
           aria-hidden="true"
         >
           <p>sign.</p>
@@ -430,7 +433,7 @@ function App() {
           <p>Develop.</p>
           <p>Deploy.</p>
         </div>
-        <div className="contact py-24 px-4 md:flex md:justify-between md:gap-4 md:mx-auto md:max-w-4xl lg:max-w-5xl">
+        <div className="contact px-3 md:flex md:justify-between md:gap-4 md:mx-auto md:max-w-4xl lg:max-w-5xl">
           <section className="md:basis-1/2 md:max-w-md lg:max-w-lg">
             <p className="text-xs uppercase tracking-wider text-accent-blue mb-1 font-medium md:text-sm lg:text-base">
               Admit it, you need this
@@ -468,9 +471,9 @@ function App() {
             <button className="call-to-action text-sm mt-4">Submit</button>
           </div>
         </div>
-        <hr></hr>
-        <div className="footer px-8 grid-rows-2 bg-[#121212]">
-          <div className="flex gap-5">
+        <div className="footer grid-rows-2 bg-[#121212]">
+          <hr></hr>
+          <div className="flex gap-5 px-8 ">
             <div>
               <a className="">cyber·space</a>
               <ul className="p-0 mt-4">
