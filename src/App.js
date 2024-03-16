@@ -36,7 +36,6 @@ function App() {
           </nav>
           <div class="house-info md:px-1">
             <section className="house-image flex flex-col justify-end"></section>
-
             <div class="house-price">
               <div className="content flex">
                 <h1 className="text-6xl sm:text-7xl text-high-emphasis font-bold sm:max-w-xl md:text-7xl md:max-w-5xl lg:text-7xl lg:max-w-none xl:text-8xl mb-0 mt-2 lg:ml-4 mr-4">
@@ -48,7 +47,6 @@ function App() {
                 </h1>
               </div>
             </div>
-
             <ul class="house-meta p-0">
               <div className="content">
                 <h1 className="hidden text-6xl sm:text-7xl text-high-emphasis font-bold sm:max-w-xl md:text-7xl md:max-w-6xl lg:text-7xl lg:max-w-none mb-0 leading-[5rem] md:leading-[5.5rem] lg:leading-[7rem] xl:text-8xl xl:leading-[8rem] md:block lg:ml-4">
@@ -61,14 +59,39 @@ function App() {
                 </h1>
               </div>
             </ul>
-            <p className="house-desc z-10 py-2
+            <p className="house-desc z-10 py-2 text-xl
             row-start-4 row-end-5 col-start-1 col-end-3 md:py-8
-            md:row-start-3 md:row-end-4 md:col-start-2 md:col-end-3 md:self-end md:justify-self-end
-             text-base md:text-2xl font-light md:text-right text-medium-emphasis md:max-w-96">
+            md:row-start-3 md:row-end-4 md:col-start-2 md:col-end-3 md:self-end md:justify-self-end md:text-2xl font-light md:text-right text-medium-emphasis md:max-w-96">
                 Developing websites, mobile applications, and software crafted to bring
                 visions to life and unlock new horizons.
               </p>
           </div>
+        </div>
+        <div
+          className="flex gap-8 text-nowrap font-normal text-2xl font-raleway"
+          aria-hidden="true"
+        >
+          <p>sign.</p>
+          <p>Develop.</p>
+          <p>Deploy.</p>
+          <p>Design.</p>
+          <p>Develop.</p>
+          <p>Deploy.</p>
+          <p>Design.</p>
+          <p>Develop.</p>
+          <p>Deploy.</p>
+          <p>Design.</p>
+          <p>Develop.</p>
+          <p>Deploy.</p>
+          <p>Design.</p>
+          <p>Develop.</p>
+          <p>Deploy.</p>
+          <p>Design.</p>
+          <p>Develop.</p>
+          <p>Deploy.</p>
+          <p>Design.</p>
+          <p>Develop.</p>
+          <p>Deploy.</p>
         </div>
         <div className="briefing px-3 py-6 md:mx-5 lg:max-w-5xl lg:mx-auto lg:py-32 xl:max-w-6xl xl:mx-auto">
           <div className="flex justify-end">
@@ -99,32 +122,7 @@ function App() {
             />
           </div>
         </div>
-        <div
-          className="flex gap-8 text-nowrap font-normal text-2xl font-raleway -rotate-6"
-          aria-hidden="true"
-        >
-          <p>sign.</p>
-          <p>Develop.</p>
-          <p>Deploy.</p>
-          <p>Design.</p>
-          <p>Develop.</p>
-          <p>Deploy.</p>
-          <p>Design.</p>
-          <p>Develop.</p>
-          <p>Deploy.</p>
-          <p>Design.</p>
-          <p>Develop.</p>
-          <p>Deploy.</p>
-          <p>Design.</p>
-          <p>Develop.</p>
-          <p>Deploy.</p>
-          <p>Design.</p>
-          <p>Develop.</p>
-          <p>Deploy.</p>
-          <p>Design.</p>
-          <p>Develop.</p>
-          <p>Deploy.</p>
-        </div>
+        
         <div className="services p-4 mt-32 lg:mb-16 md:mx-5 ">
           <div className="mb-12 max-w-6xl lg:mx-auto">
             <h2 className="text-3xl font-normal mb-4">
