@@ -16,6 +16,9 @@ module.exports = {
       },
       translate:{
           '4/5': '50%'
+      },
+      flexBasis: {
+        '12/25': '48%',
       }
     },
   },
