@@ -61,11 +61,11 @@ function App() {
                 </h1>
               </div>
             </ul>
-            <p className="house-desc
-            row-start-4 row-end-5 col-start-1 col-end-3
-            md:row-start-3 md:row-end-4 md:col-start-2 md:col-end-3
-             text-base md:text-2xl font-light md:text-right text-medium-emphasis text-right md:max-w-96">
-                Developing websites, <br></br> mobile applications, and software crafted to bring
+            <p className="house-desc z-10 py-2
+            row-start-4 row-end-5 col-start-1 col-end-3 md:py-8
+            md:row-start-3 md:row-end-4 md:col-start-2 md:col-end-3 md:self-end md:justify-self-end
+             text-base md:text-2xl font-light md:text-right text-medium-emphasis md:max-w-96">
+                Developing websites, mobile applications, and software crafted to bring
                 visions to life and unlock new horizons.
               </p>
           </div>

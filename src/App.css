@@ -353,15 +353,6 @@ button.call-to-action {
   /* z-index: -1; */
 }
 
-.house-desc{
-  z-index: 2;
-  padding: 2rem 0;
-  /* align-self: end;
-  justify-self: end; */
-}
-
-
-
 
 .briefing p, .hero section .left p{
     color: var(--medium-emphasis);
