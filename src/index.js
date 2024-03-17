@@ -128,7 +128,7 @@ const theme = {
           borderRadius: "rounded-lg",
         },
         md: {
-          fontSize: "text-xs",
+          fontSize: "text-sm",
           py: "py-3",
           px: "px-6",
           borderRadius: "rounded-lg",
@@ -794,7 +794,7 @@ const theme = {
           display: "block",
           fontSmoothing: "antialiased",
           letterSpacing: "tracking-normal",
-          fontFamily: "font-sans",
+          fontFamily: "font-nunito",
           fontSize: "text-base",
           fontWeight: "font-semibold",
           lineHeight: "leading-relaxed",
@@ -916,6 +916,65 @@ const theme = {
         red: {
           color: "text-red-500",
           gradient: "bg-gradient-to-tr from-red-600 to-red-400",
+        },
+      },
+    },
+  },
+  menu: {
+    defaultProps: {
+      placement: "bottom",
+      offset: 5,
+      dismiss: {
+        itemPress: true
+      },
+      animate: {
+        unmount: {},
+        mount: {},
+      },
+      lockScroll: false,
+    },
+    styles: {
+      base: {
+        menu: {
+          bg: "bg-black",
+          minWidth: "min-w-[180px]",
+          p: "p-3",
+          border: "none",
+          borderRadius: "rounded-3xl",
+          boxShadow: "shadow-lg shadow-blue-gray-500/10",
+          fontFamily: "font-sans",
+          fontSize: "text-sm",
+          fontWeight: "font-normal",
+          color: "text-blue-gray-500",
+          overflow: "overflow-auto",
+          outline: "focus:outline-none",
+          zIndex: "z-[999]",
+        },
+        item: {
+          initial: {
+            display: "block",
+            width: "w-full",
+            pt: "pt-[9px]",
+            pb: "pb-2",
+            px: "px-3",
+            borderRadius: "rounded-md",
+            textAlign: "text-start",
+            lightHeight: "leading-tight",
+            cursor: "cursor-pointer",
+            userSelect: "select-none",
+            transition: "transition-all",
+            bg: "hover:bg-primary-elevation-1 hover:bg-opacity-100 focus:bg-primary-elevation-1 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80",
+            color: "hover:text-blue-gray-900 focus:text-blue-gray-900 active:text-blue-gray-900",
+            outline: "outline-none",
+          },
+          disabled: {
+            opacity: "opacity-50",
+            cursor: "cursor-not-allowed",
+            pointerEvents: "pointer-events-none",
+            userSelect: "select-none",
+            bg: "hover:bg-transparent focus:bg-transparent active:bg-transparent",
+            color: "hover:text-blue-gray-500 focus:text-blue-gray-500 active:text-blue-gray-500",
+          },
         },
       },
     },

@@ -16,6 +16,9 @@ import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
+  ComputerDesktopIcon,
+  DevicePhoneMobileIcon,
+  CodeBracketIcon
 } from "@heroicons/react/24/outline";
 import {
   Bars4Icon,
@@ -32,50 +35,55 @@ import {
 
 const navListMenuItems = [
   {
-    title: "Products",
+    title: "Website Development",
     description: "Find the perfect solution for your needs.",
-    icon: SquaresPlusIcon,
+    icon: ComputerDesktopIcon,
+  },
+  {
+    title: "Mobile App Development",
+    description: "Meet and learn about our dedication",
+    icon: DevicePhoneMobileIcon,
+  },
+  {
+    title: "Software Development",
+    description: "Find the perfect solution for your needs.",
+    icon: CodeBracketIcon,
   },
   {
     title: "About Us",
     description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
   },
-  {
-    title: "Blog",
-    description: "Find the perfect solution for your needs.",
-    icon: Bars4Icon,
-  },
-  {
-    title: "Services",
-    description: "Learn how we can help you achieve your goals.",
-    icon: SunIcon,
-  },
-  {
-    title: "Support",
-    description: "Reach out to us for assistance or inquiries",
-    icon: GlobeAmericasIcon,
-  },
+  // {
+  //   title: "Services",
+  //   description: "Learn how we can help you achieve your goals.",
+  //   icon: SunIcon,
+  // },
+  // {
+  //   title: "Support",
+  //   description: "Reach out to us for assistance or inquiries",
+  //   icon: GlobeAmericasIcon,
+  // },
   {
     title: "Contact",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
   },
-  {
-    title: "News",
-    description: "Read insightful articles, tips, and expert opinions.",
-    icon: NewspaperIcon,
-  },
-  {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
-    icon: RectangleGroupIcon,
-  },
-  {
-    title: "Special Offers",
-    description: "Explore limited-time deals and bundles",
-    icon: TagIcon,
-  },
+  // {
+  //   title: "News",
+  //   description: "Read insightful articles, tips, and expert opinions.",
+  //   icon: NewspaperIcon,
+  // },
+  // {
+  //   title: "Products",
+  //   description: "Find the perfect solution for your needs.",
+  //   icon: RectangleGroupIcon,
+  // },
+  // {
+  //   title: "Special Offers",
+  //   description: "Explore limited-time deals and bundles",
+  //   icon: TagIcon,
+  // },
 ];
 
 function NavListMenu() {
@@ -85,24 +93,23 @@ function NavListMenu() {
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+          <div className="flex items-center justify-center rounded-lg !bg-primary-elevation-1 p-2 ">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
+              className: "h-6 text-accent-blue w-6",
             })}
           </div>
           <div>
             <Typography
               variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
+              className="flex items-center text-sm font-semibold text-high-emphasis"
             >
               {title}
             </Typography>
             <Typography
               variant="paragraph"
-              className="text-xs !font-medium text-blue-gray-500"
+              className="text-xs !font-medium text-medium-emphasis"
             >
               {description}
             </Typography>
@@ -117,14 +124,14 @@ function NavListMenu() {
       <Menu
         open={isMenuOpen}
         handler={setIsMenuOpen}
-        offset={{ mainAxis: 20 }}
-        placement="bottom"
+        offset={{ mainAxis: 10 }}
+        placement="bottom-start"
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small">
+          <Typography as="div" variant="medium">
             <ListItem
-              className="flex items-center gap-2 py-0 pr-4"
+              className="flex items-center gap-2 py-0 pr-4 p-0"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -144,8 +151,8 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+        <MenuList className="hidden max-w-screen-xl rounded-lg lg:block">
+          <ul className="grid grid-cols-2 gap-y-2 outline-none outline-0">
             {renderItems}
           </ul>
         </MenuList>
@@ -162,14 +169,15 @@ function NavList() {
   return (
     <List className="mt-0 mb-0 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 lg:justify-end lg:items-center">
       <NavListMenu />
-      <Typography
+      {/* <Typography
           as="a"
           href="#"
-          variant="small"
+          variant="medium"
           className="cursor-pointer lg:ml-2 no-underline"
         >
           Contact
-        </Typography>
+        </Typography> */}
+        
     </List>
   );
 }
@@ -205,17 +213,13 @@ export function NavbarWithMegaMenu() {
             <NavList />
           </div>
           <div className="hidden gap-2 lg:flex">
-            {/* <Button variant="text" size="sm" color="blue-gray">
-              Log In
-            </Button> */}
             <Button variant="filled" size="md">
               Schedule Free Consultation
             </Button>
           </div>
           <IconButton
             variant="text"
-            color="blue-gray"
-            className="lg:hidden"
+            className="lg:hidden text-accent-blue"
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (
@@ -229,12 +233,9 @@ export function NavbarWithMegaMenu() {
       <Collapse open={openNav}>
         <NavList />
         <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
-            Log In
-          </Button>
-          <Button variant="gradient" size="sm" fullWidth>
-            Sign In
-          </Button>
+          <Button variant="filled" size="sm" fullWidth>
+              Schedule Free Consultation
+            </Button>
         </div>
       </Collapse>
     </Navbar>
