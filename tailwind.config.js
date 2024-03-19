@@ -26,6 +26,11 @@ module.exports = withMT({
         'hero-image': "url('./src/assets/rover.jpg')",
       }
     },
+    screens: {
+      'xs': '400px',
+      // => @media (min-width: 640px) { ... }
+
+    },
   },
   plugins: [],
 })
