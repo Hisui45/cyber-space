@@ -18,7 +18,7 @@ import {
   XMarkIcon,
   ComputerDesktopIcon,
   DevicePhoneMobileIcon,
-  CodeBracketIcon
+  CodeBracketIcon,
 } from "@heroicons/react/24/outline";
 import {
   Bars4Icon,
@@ -31,7 +31,6 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
-
 
 const navListMenuItems = [
   {
@@ -164,7 +163,6 @@ function NavListMenu() {
   );
 }
 
-
 function NavList() {
   return (
     <List className="mt-0 mb-0 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 lg:justify-end lg:items-center">
@@ -177,7 +175,6 @@ function NavList() {
         >
           Contact
         </Typography> */}
-        
     </List>
   );
 }
@@ -191,53 +188,57 @@ export function NavbarWithMegaMenu() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
-
+  {
+    
+  }
   return (
-    <Navbar
-      fullWidth="true"
-      shadow="false"
-      color="transparent"
-      className="p-4"
-    >
-      <div className="flex items-center justify-between text-high-emphasis">
-        <Typography
-          as="a"
-          href="#"
-          variant="p"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2 no-underline"
-        >
-          cyber·space
-        </Typography>
-        <div className="flex items-center gap-4">
-          <div className="hidden lg:block">
-            <NavList />
-          </div>
-          <div className="hidden gap-2 lg:flex">
-            <Button variant="filled" size="md">
-              Schedule Free Consultation
-            </Button>
-          </div>
-          <IconButton
-            variant="text"
-            className="lg:hidden text-accent-blue"
-            onClick={() => setOpenNav(!openNav)}
+    <div className="bg-[#121212] sticky top-0 z-50">
+      <Navbar
+        fullWidth="true"
+        shadow="false"
+        color="gray"
+        className="p-4 bg-[url('./assets/noise-03.png')]  bg-repeat bg-[length:182px_182px]"
+      >
+        <div className="flex items-center justify-between text-high-emphasis">
+          <Typography
+            as="a"
+            href="#"
+            variant="p"
+            className="mr-4 cursor-pointer py-1.5 lg:ml-2 no-underline"
           >
-            {openNav ? (
-              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-            ) : (
-              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-            )}
-          </IconButton>
+            cyber·space
+          </Typography>
+          <div className="flex items-center gap-4">
+            <div className="hidden lg:block">
+              <NavList />
+            </div>
+            <div className="hidden gap-2 lg:flex">
+              <Button variant="filled" size="md">
+                Schedule Free Consultation
+              </Button>
+            </div>
+            <IconButton
+              variant="text"
+              className="lg:hidden text-accent-blue"
+              onClick={() => setOpenNav(!openNav)}
+            >
+              {openNav ? (
+                <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+              ) : (
+                <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+              )}
+            </IconButton>
+          </div>
         </div>
-      </div>
-      <Collapse open={openNav}>
-        <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button variant="filled" size="sm" fullWidth>
+        <Collapse open={openNav}>
+          <NavList />
+          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+            <Button variant="filled" size="sm" fullWidth>
               Schedule Free Consultation
             </Button>
-        </div>
-      </Collapse>
-    </Navbar>
+          </div>
+        </Collapse>
+      </Navbar>
+    </div>
   );
 }

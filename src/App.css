@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 .application{
@@ -125,7 +126,7 @@
   grid-column: 1 / 3;
 }
 
-@media screen and (min-width: 960px) {
+/* @media screen and (min-width: 960px) {
   .hero-desc{
     grid-row: 3 / 4;
     grid-column: 1 / 4;
@@ -133,10 +134,10 @@
     justify-self: end;
     max-width: 35%;
   }
-}
+} */
 
 
- @media screen and (min-width: 1140px) and (max-width:1247px) {
+ /* @media screen and (min-width: 1140px) and (max-width:1247px) {
   .hero-desc{
     grid-row: 4 / 5;
     grid-column: 1 / 3;
@@ -144,9 +145,9 @@
     align-self: normal;
     justify-self: normal;
   }
-}
+} */
 
-@media screen and (min-width: 2040px){
+/* @media screen and (min-width: 2040px){
   .hero-desc{
     grid-row: 4 / 5;
     grid-column: 1 / 3;
@@ -154,7 +155,7 @@
     align-self: normal;
     justify-self: normal;
   }
-}
+} */
 
 
 .difficult-block{
@@ -166,6 +167,88 @@
     display: block;
   }
 }
+
+
+.word:before{
+  position: absolute;
+  border-radius: 99999px;
+  align-self: end;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (min-width: 720px){
+  .word:before{
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* @media screen and (min-width: 960px){
+  .word:before{
+    width: 2rem;
+    height: 2rem;
+  }
+} */
+
+@media screen and (min-width: 1140px){
+  .word:before{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* @media screen and (min-width: 1320px){
+  .word:before{
+    width: 3rem;
+    height: 3rem;
+  }
+} */
+
+
+/* .call-to-action{
+  position: relative;
+  overflow-x: hidden;
+} */
+
+/* .call-to-action::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/grid-me.png");
+  background-size: 25px;
+  background-repeat: repeat;   
+  filter: opacity(0.1);
+  z-index: -1;
+} */
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateX(-155%);
+    animation-timing-function: cubic-bezier(0, 0, 0.1, 0.1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.1, 0.1);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateX(155%);
+    animation-timing-function: cubic-bezier(0, 0, 0.1, 0.1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.1, 0.1);
+  }
+}
+
+
 
 
 
