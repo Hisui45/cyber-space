@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cyber-space/static/css/main.1fc26089.css",
-    "main.js": "/cyber-space/static/js/main.d017c194.js",
+    "main.css": "/cyber-space/static/css/main.42b769d4.css",
+    "main.js": "/cyber-space/static/js/main.100886b3.js",
     "static/js/787.9e9f4ffd.chunk.js": "/cyber-space/static/js/787.9e9f4ffd.chunk.js",
     "static/media/moon-ground.jpg": "/cyber-space/static/media/moon-ground.8aa04005b3f10952697c.jpg",
     "static/media/rover.jpg": "/cyber-space/static/media/rover.43d8a6a7617eaff5ae62.jpg",
@@ -11,12 +11,12 @@
     "static/media/moon.jpg": "/cyber-space/static/media/moon.0c9a3da9c7730258f861.jpg",
     "static/media/noise-03.png": "/cyber-space/static/media/noise-03.605dd7ad122dfb2fee86.png",
     "index.html": "/cyber-space/index.html",
-    "main.1fc26089.css.map": "/cyber-space/static/css/main.1fc26089.css.map",
-    "main.d017c194.js.map": "/cyber-space/static/js/main.d017c194.js.map",
+    "main.42b769d4.css.map": "/cyber-space/static/css/main.42b769d4.css.map",
+    "main.100886b3.js.map": "/cyber-space/static/js/main.100886b3.js.map",
     "787.9e9f4ffd.chunk.js.map": "/cyber-space/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fc26089.css",
-    "static/js/main.d017c194.js"
+    "static/css/main.42b769d4.css",
+    "static/js/main.100886b3.js"
   ]
 }
