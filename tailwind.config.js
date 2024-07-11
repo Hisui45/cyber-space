@@ -5,7 +5,9 @@ module.exports = withMT({
   theme: {
     fontFamily:{
       'raleway':['Raleway, sans-serif'],
-      'nunito':['Nunito, sans-serif']
+      'nunito':['Nunito, sans-serif'],
+      'racing':['Racing Sans One, sans-serif'],
+      'roboto':['Roboto, sans-serif']
     },
     extend: {
       colors:{
@@ -30,6 +32,7 @@ module.exports = withMT({
     screens: {
       'xs': '400px',
       // => @media (min-width: 640px) { ... }
+      'lg-1': '1060px'
 
     },
   },

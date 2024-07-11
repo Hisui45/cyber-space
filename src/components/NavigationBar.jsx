@@ -192,12 +192,13 @@ export function NavbarWithMegaMenu() {
     
   }
   return (
-    <div className="bg-[#121212] sticky top-0 z-50">
+    <div className="bg-transparent sticky top-0 z-50">
       <Navbar
         fullWidth="true"
         shadow="false"
-        color="gray"
-        className="p-4 bg-[url('./assets/noise-03.png')]  bg-repeat bg-[length:182px_182px]"
+        color="transparent"
+        className="px-4 py-4"
+        // className="p-4 bg-[url('./assets/noise-03.png')]  bg-repeat bg-[length:182px_182px]"
       >
         <div className="flex items-center justify-between text-high-emphasis">
           <Typography
